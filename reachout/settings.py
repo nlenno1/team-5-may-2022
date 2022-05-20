@@ -113,7 +113,7 @@ DATABASES = {
         'NAME': 'reachout',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://reachout-dev:DB_SECRET_KEY@myfirstcluster.exgjq.mongodb.net/?retryWrites=true&w=majority'
+            'host': f'mongodb+srv://reachout-dev:{DB_SECRET_KEY}@myfirstcluster.exgjq.mongodb.net/?retryWrites=true&w=majority'
         }
     }
 }
