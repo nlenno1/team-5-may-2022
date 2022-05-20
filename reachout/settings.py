@@ -10,13 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os
 import environ
+import os
 from pathlib import Path
 
 # Initialise environment variables
 env = environ.Env()
+# reading .env file
 environ.Env.read_env()
+
+DB_SECRET_KEY = env("DB_SECRET_KEY")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -125,6 +128,7 @@ DATABASES = {
         }
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
