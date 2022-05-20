@@ -11,3 +11,51 @@ footer p, nav p {
 h1, h2, h3 ,h4, h5 {
     font-family: 'Nunito', san-serif;
 }
+
+/* Colors */
+
+.dark-blue {
+    color: rgba(16, 131, 163, 1)
+}
+
+.light-blue {
+    color: rgba(86, 186, 214, 1)
+}
+
+.green {
+    color: rgba(0, 112, 74, 1)
+}
+
+.brown {
+    color: rgba(125, 36, 31, 1)
+}
+
+.red {
+    color: rgba(163, 16, 64, 1)
+}
+
+.dark-blue-bg {
+    background-color: rgba(16, 131, 163, 1)
+}
+
+.light-blue-bg {
+    background-color: rgba(86, 186, 214, 1)
+}
+
+.green-bg {
+    background-color: rgba(0, 112, 74, 1)
+}
+
+.brown-bg {
+    background-color: rgba(125, 36, 31, 1)
+}
+
+.red-bg {
+    background-color: rgba(163, 16, 64, 1)
+}
+
+/* Index Page CSS */
+
+/* .jumbotron {
+    min-height: 100vh
+} */
