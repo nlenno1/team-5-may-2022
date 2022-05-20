@@ -31,7 +31,7 @@ h1, h2, h3 ,h4, h5 {
 }
 
 .red {
-    color: gba(163, 16, 64, 1)
+    color: rgba(163, 16, 64, 1)
 }
 
 .dark-blue-bg {
