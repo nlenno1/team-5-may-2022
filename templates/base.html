@@ -34,11 +34,15 @@
   <body>
     <header class="container-fluid fixed-top"></header>
 
+    {% include 'includes/navbar.html' %}
+
     {% block page_header %}
     {% endblock %}
 
     {% block content %}
     {% endblock %}
+
+    {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
     {% endblock %}
