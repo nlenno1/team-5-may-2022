@@ -74,7 +74,7 @@ Fonts Used Placeholder Text
 
 ### Color Scheme
 Colors Used Placeholder Text
-
+![Color Scheme ](assets/images/readme/colours.png)
 -----
 
 ## Features Implemented
