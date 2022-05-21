@@ -34,6 +34,10 @@ h1, h2, h3 ,h4, h5 {
     color: rgba(163, 16, 64, 1)
 }
 
+.white {
+    color: rgba(255, 255, 255, 1);
+}
+
 .dark-blue-bg {
     background-color: rgba(16, 131, 163, 1)
 }
@@ -44,6 +48,10 @@ h1, h2, h3 ,h4, h5 {
 
 .green-bg {
     background-color: rgba(0, 112, 74, 1)
+}
+
+.green-bg-trans {
+    background-color: rgba(97, 107, 104, 0.5)
 }
 
 .brown-bg {
@@ -63,4 +71,16 @@ h1, h2, h3 ,h4, h5 {
 .here-to-help {
     width: 90%;
     padding: 5rem;
+    background: url("/static/hands2.png")
+}
+
+.here-to-help-text {
+    padding: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.kate {
+    border: 1px solid black;
 }
