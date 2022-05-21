@@ -12,6 +12,58 @@ h1, h2, h3 ,h4, h5 {
     font-family: 'Nunito', san-serif;
 }
 
+/* Colors */
+
+.dark-blue {
+    color: rgba(16, 131, 163, 1)
+}
+
+.light-blue {
+    color: rgba(86, 186, 214, 1)
+}
+
+.green {
+    color: rgba(0, 112, 74, 1)
+}
+
+.brown {
+    color: rgba(125, 36, 31, 1)
+}
+
+.red {
+    color: rgba(163, 16, 64, 1)
+}
+
+.white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dark-blue-bg {
+    background-color: rgba(16, 131, 163, 1)
+}
+
+.light-blue-bg {
+    background-color: rgba(86, 186, 214, 1)
+}
+
+.green-bg {
+    background-color: rgba(0, 112, 74, 1)
+}
+
+.green-bg-trans {
+    background-color: rgba(97, 107, 104, 0.5)
+}
+
+.brown-bg {
+    background-color: rgba(125, 36, 31, 1)
+}
+
+.red-bg {
+    background-color: rgba(163, 16, 64, 1)
+}
+
+/* Navbar */
+
 /* .navbar-brand {
     background: url("../img/logo.svg") no-repeat left;
     height: 3.5rem;
@@ -37,4 +89,26 @@ h1, h2, h3 ,h4, h5 {
 #menu-toggle-button {
     border: 2px solid #00704a;
     border-radius: 5px;
+
+/* Index Page CSS */
+
+/* .jumbotron {
+    min-height: 100vh
+} */
+
+.here-to-help {
+    width: 90%;
+    padding: 5rem;
+    background: url("/static/hands2.png")
+}
+
+.here-to-help-text {
+    padding: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.kate {
+    border: 1px solid black;
 }
