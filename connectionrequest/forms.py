@@ -12,6 +12,7 @@ class ConnectionRequestForm(forms.ModelForm):
         fields = (
             "recipient_name",
             "recipient_email",
+            "relation",
             "connection_reason",
             "custom_message",
         )
@@ -25,6 +26,7 @@ class ConnectionRequestForm(forms.ModelForm):
         placeholders = {
             "recipient_name": "Contact Name",
             "recipient_email": "Email Address",
+            "relation": "What is this persons relation to you? ",
             "connection_reason": "Why are you reaching out",
             "custom_message": "Add a custom message if you like",
         }
