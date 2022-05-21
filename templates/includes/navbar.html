@@ -3,8 +3,9 @@
 <!-- NAVBAR STYLING -->
 <nav class="navbar navbar-light navbar-expand-md" id="main-nav">
     <div class="container-fluid">
-        <!-- <a href="{% url 'home' %}" class="navbar-brand"></a> -->
-        <a src="{{ MEDIA_URL }}logo.svg"></a>
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{{ MEDIA_URL }}logo.svg" alt="" class="img-fluid" width="150px">
+        </a>
         <button id="menu-toggle-button" class="navbar-toggler"
             type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">

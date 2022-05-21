@@ -1,0 +1,5 @@
+You have recieved a connection response from {% if data.recipient_name %}{{ data.recipient_name }}{% else %}{{ data.recipient_email }}{% endif %}
+
+{% if data.response_decision == "accept" %}They want to talk to you about this issue so get in touch with them!{% else %}Unfortunatly they are not open to this conversation at this time{% endif %}
+
+{% if  data.custom_response_text %}They sent you this message : {{ data.custom_response_text }}{% endif %}
