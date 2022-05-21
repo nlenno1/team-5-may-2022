@@ -51,6 +51,10 @@ h1, h2, h3 ,h4, h5 {
 }
 
 .green-bg-trans {
+    background-color: rgba(0, 112, 74, 0.3)
+}
+
+.gray-bg-trans {
     background-color: rgba(97, 107, 104, 0.5)
 }
 
@@ -88,7 +92,7 @@ h1, h2, h3 ,h4, h5 {
 
 #menu-toggle-button {
     border: 2px solid #00704a;
-    border-radius: 5px;
+    border-radius: 5px;}
 
 /* Index Page CSS */
 
@@ -111,4 +115,22 @@ h1, h2, h3 ,h4, h5 {
 
 .kate {
     border: 1px solid black;
+}
+
+/* How To Use Page */
+
+.how-to-jumbotron {
+    margin-bottom: 3rem;
+}
+
+.how-to-holder {
+    margin-bottom: 2rem;
+}
+
+.icon-holder {
+    height: 14rem; 
+    text-align: center;
+    margin: 0px;
+    border-radius: 3px;
+    font-size: 7.5rem;   
 }
