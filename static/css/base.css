@@ -59,3 +59,8 @@ h1, h2, h3 ,h4, h5 {
 /* .jumbotron {
     min-height: 100vh
 } */
+
+.here-to-help {
+    width: 90%;
+    padding: 5rem;
+}
