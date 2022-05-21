@@ -1,0 +1,1 @@
+{{ name }}, you have been sent a connection request from someone who would like to talk
