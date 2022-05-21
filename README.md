@@ -64,16 +64,20 @@ Reach Out is a project designed with the hopes of giving confidence to people wh
 We hope that the project will reach a wide range of demographics unbound by race, sexuality, class, social background, the list goes on. Ultimately, it is up to the users on how they use the website and the issues they are dealing with, but we hope that with enough information and encouragement people of all varieties will make great progress on their struggles from the platform.
 
 ### Features and Scope Planning
-Image Placeholder
+
+![Features](assets/images/readme/features.png)
 
 ### Wireframes
-Image Placeholder
+
+![Wireframes](assets/images/readme/wireframe.png)
 
 ### Typography
-Fonts Used Placeholder Text
+
+![Typography](assets/images/readme/typography.png)
 
 ### Color Scheme
-Colors Used Placeholder Text
+We dicided upon a deep green and complimentary blue as the main colors of choice for the project. Green and Blue are said to have calming effects and are often considered refreshing, relaxing colours. Green has also been found to positively influence not only our emotions but our memories as well and Blue is often seen as a sign of stability and reliability.
+
 ![Color Scheme ](assets/images/readme/colours.png)
 -----
 
@@ -122,5 +126,16 @@ The final project was created using the following steps:
 ### Content
 
 ### Media
+https://www.pexels.com/photo/woman-wearing-yellow-button-up-long-sleeved-dress-shirt-774095/
+https://www.pexels.com/photo/man-in-red-jacket-1681010/
+https://www.pexels.com/photo/smiling-woman-wearing-earrings-and-black-collared-top-1197132/
+
+https://stock.adobe.com/uk/images/hands-holding-red-heart-health-care-love-organ-donation-wellbeing-family-insurance-csr-concept-world-heart-day-world-health-day-hope-gratitude-covid-19-coronavirus-relief-praying-concept/287274862?prev_url=detail
+
+https://stock.adobe.com/uk/images/take-care-of-yourself-napkin-concept/218872151?prev_url=detail
+
+https://stock.adobe.com/uk/images/group-of-volunteers-holding-soil-with-sprouts-in-hands-outdoors-top-view-space-for-text/284697050?prev_url=detail
+
+https://stock.adobe.com/uk/images/curly-haired-overweight-young-woman-in-blue-top-and-shorts-with-satisfaction-on-face-accepts-curvy-body-shape-in-stylish-bedroom/472948599?prev_url=detail
 
 ### Further Learning
