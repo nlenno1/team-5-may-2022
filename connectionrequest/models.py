@@ -15,7 +15,9 @@ CONNECTION_RESPONSES = {
 class ConnectionRequest(models.Model):
     """Class for the Message Requests"""
 
-    request_id = models.UUIDField(default=uuid.uuid4, editable=False)
+    request_id = models.UUIDField(
+        primary_key=True, default=uuid.uuid4, editable=False
+    )
     recipient_name = models.CharField(max_length=254, null=False, blank=False)
     recipient_email = models.EmailField(
         max_length=254, null=False, blank=False
@@ -29,6 +31,7 @@ class ConnectionRequest(models.Model):
         max_length=30, choices=CONNECTION_RESPONSES, null=True, blank=True
     )
     custom_response_text = models.TextField(null=True, blank=True)
+    request_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         """Return description string"""
