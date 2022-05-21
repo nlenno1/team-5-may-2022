@@ -13,13 +13,15 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import environ
 import os
 from pathlib import Path
+if os.path.isfile('env.py'):
+    import env
 
-# Initialise environment variables
-env = environ.Env()
-# reading .env file
-environ.Env.read_env()
+# # Initialise environment variables
+# env = environ.Env()
+# # reading .env file
+# environ.Env.read_env()
 
-DB_SECRET_KEY = env("DB_SECRET_KEY")
+DB_SECRET_KEY = os.environ.get("DB_SECRET_KEY")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  env("SECRET_KEY")
+SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
