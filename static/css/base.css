@@ -62,6 +62,34 @@ h1, h2, h3 ,h4, h5 {
     background-color: rgba(163, 16, 64, 1)
 }
 
+/* Navbar */
+
+/* .navbar-brand {
+    background: url("../img/logo.svg") no-repeat left;
+    height: 3.5rem;
+    width: 12.5rem;
+} */
+
+.navlink {
+    font-family: 'Nunito', san-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #00704a;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: none;
+    list-style-type: none;
+    color: #a31040;
+}
+
+#menu-toggle-button {
+    border: 2px solid #00704a;
+    border-radius: 5px;
+
 /* Index Page CSS */
 
 /* .jumbotron {
