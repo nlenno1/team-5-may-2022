@@ -37,3 +37,10 @@ class ConnectionRequestForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs["placeholder"] = placeholder
             self.fields[field].label = False
+
+
+class ConnectionSearchForm(forms.Form):
+    """Class for Connection Request Search"""
+
+    search_uuid = forms.UUIDField(label="Connection Code ")
+

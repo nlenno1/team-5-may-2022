@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .forms import ConnectionRequestForm
+from .models import ConnectionRequest
+from .forms import ConnectionRequestForm, ConnectionSearchForm
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
@@ -30,6 +31,7 @@ def send_connection_email(data):
             data.recipient_email,
         ],
     )
+
 
 def send_connection_request(request):
     """ A view to return the connection request page """
@@ -63,3 +65,37 @@ def send_connection_request(request):
     }
 
     return render(request, 'connectionrequest/send-request.html', context)
+
+
+def connection_request_search(request):
+    """ A view to return the connection request page """
+
+    form = ConnectionSearchForm()
+
+    if request.method == "POST":
+        form = ConnectionSearchForm(request.POST)
+        if form.is_valid():
+            connection_request = ConnectionRequest.objects.filter(
+                request_id=form.cleaned_data.get("search_uuid")
+            )
+            print(connection_request[0])
+            # messages.success(
+            #     request,
+            #     f"Instructor Profile for \
+            #                 {instructor.friendly_name} created",
+            # )
+        else:
+            # messages.error(
+            #     request,
+            #     "Unable to Instructor Profile. Please check \
+            #     that the form is valid",
+            # )
+            print("Please enter valid information")
+
+        return redirect(reverse("connection_request_search"))
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'connectionrequest/search-for-request.html', context)
