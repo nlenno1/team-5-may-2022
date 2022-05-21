@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <h1 class="text-success">Respond to Connection Request {{ data.request_id }}</h1>
+    <h2 class="text-center text-md-start ps-md-5 mb-5">Fill in the form below to respond to your Connection Request</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <!-- Connection Request Search Form -->
+            <form action="{% url 'respond_to_connection_request' data.request_id %}" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center my-5">
+                    <a href="{% url 'home' %}" class="btn btn-dark">Cancel</a>
+                    <button type="submit" class="btn btn-success">Submit Response</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

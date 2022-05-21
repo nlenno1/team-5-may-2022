@@ -64,6 +64,10 @@ h1, h2, h3 ,h4, h5 {
 }
 
 .green-bg-trans {
+    background-color: rgba(0, 112, 74, 0.3)
+}
+
+.gray-bg-trans {
     background-color: rgba(97, 107, 104, 0.5)
 }
 
@@ -115,6 +119,7 @@ h1, h2, h3 ,h4, h5 {
 #menu-toggle-button {
     border: 2px solid var(--primary-color);
     border-radius: 5px;
+}
 
 }
 
@@ -142,6 +147,7 @@ h1, h2, h3 ,h4, h5 {
 }
 
 
+
 /* About Us */
 #about-hero {
     background-image: url("/media/about-hero.webp");
@@ -156,3 +162,84 @@ h1, h2, h3 ,h4, h5 {
     align-items: center;
     color: var(--tertiary-color);
 }
+
+/* How To Use Page */
+
+.how-to-jumbotron {
+    margin-bottom: 3rem;
+}
+
+.how-to-holder {
+    margin-bottom: 2rem;
+}
+
+.icon-holder {
+    height: 14rem; 
+    text-align: center;
+    margin: 0px;
+    border-radius: 3px;
+    font-size: 7.5rem;   
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
