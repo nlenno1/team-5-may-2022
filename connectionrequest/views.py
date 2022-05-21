@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def send_connection_request(request):
+    """ A view to return the connection request page """
+    return render(request, 'connectionrequest/send-request.html')
