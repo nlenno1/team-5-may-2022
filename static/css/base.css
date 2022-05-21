@@ -34,6 +34,10 @@ h1, h2, h3 ,h4, h5 {
     color: rgba(163, 16, 64, 1)
 }
 
+.white {
+    color: rgba(255, 255, 255, 1);
+}
+
 .dark-blue-bg {
     background-color: rgba(16, 131, 163, 1)
 }
@@ -46,12 +50,45 @@ h1, h2, h3 ,h4, h5 {
     background-color: rgba(0, 112, 74, 1)
 }
 
+.green-bg-trans {
+    background-color: rgba(97, 107, 104, 0.5)
+}
+
 .brown-bg {
     background-color: rgba(125, 36, 31, 1)
 }
 
 .red-bg {
     background-color: rgba(163, 16, 64, 1)
+}
+
+/* Navbar */
+
+/* .navbar-brand {
+    background: url("../img/logo.svg") no-repeat left;
+    height: 3.5rem;
+    width: 12.5rem;
+} */
+
+.navlink {
+    font-family: 'Nunito', san-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #00704a;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: none;
+    list-style-type: none;
+    color: #a31040;
+}
+
+#menu-toggle-button {
+    border: 2px solid #00704a;
+    border-radius: 5px;
 }
 
 /* Index Page CSS */
@@ -63,4 +100,16 @@ h1, h2, h3 ,h4, h5 {
 .here-to-help {
     width: 90%;
     padding: 5rem;
+    background: url("/static/hands2.png")
+}
+
+.here-to-help-text {
+    padding: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.kate {
+    border: 1px solid black;
 }
