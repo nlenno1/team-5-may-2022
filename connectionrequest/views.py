@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import ConnectionRequest
 from .forms import (ConnectionRequestForm, ConnectionSearchForm, 
@@ -7,6 +8,7 @@ from .forms import (ConnectionRequestForm, ConnectionSearchForm,
 from .utils import send_connection_email, send_response_email
 
 
+@login_required
 def send_connection_request(request):
     """ A view to send a connection request """
 
@@ -15,13 +17,26 @@ def send_connection_request(request):
     if request.method == "POST":
         form = ConnectionRequestForm(request.POST)
         if form.is_valid():
-            new_connection_request = form.save()
-            send_connection_email(new_connection_request)
-            messages.success(
-                request,
-                f"Connection Request sent to  \
-                {new_connection_request.recipient_email}",
+            exisiting_request = ConnectionRequest.objects.filter(
+                recipient_email=form.cleaned_data['recipient_email'],
+                sender_email=request.user.email
             )
+            if len(exisiting_request) == 0:
+                new_connection_request = form.save()
+                new_connection_request.sender_email = request.user.email
+                new_connection_request.save()
+                send_connection_email(new_connection_request)
+                messages.success(
+                    request,
+                    f"Connection Request sent to  \
+                    {new_connection_request.recipient_email}",
+                )
+            else:
+                messages.error(
+                    request,
+                    "You have already sent an email to that person. You can't \
+                        send more than 1 connection request to every email address",
+                )
         else:
             messages.error(
                 request,
@@ -49,7 +64,6 @@ def connection_request_search(request):
             connection_request = get_object_or_404(ConnectionRequest, 
                                                    request_id=connection_code)
             if connection_request:
-                print(connection_request.response_decision)
                 if connection_request.response_decision is None:
                     messages.success(
                         request,

@@ -32,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['team5-reachout.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
