@@ -1,10 +1,9 @@
 {% load static %}
 
 <!-- NAVBAR STYLING -->
-<nav class="navbar navbar-light navbar-expand-md" id="main-nav">
+<nav class="navbar navbar-light navbar-expand-md fixed-top primary">
     <div class="container-fluid">
-        <!-- <a href="{% url 'home' %}" class="navbar-brand"></a> -->
-        <a src="{{ MEDIA_URL }}logo.svg"></a>
+        <a href="{% url 'home' %}" class="navbar-brand" alt-text="reachout logo"></a>
         <button id="menu-toggle-button" class="navbar-toggler"
             type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -18,14 +17,21 @@
                 <li class="nav-item">
                     <a class="navlink" href="">Login</a>
                 </li>
-                <li class="nav-item">
-                    <a class="navlink" href="">Reach Out</a>
+                <li class="nav-item dropdown">
+                    <a class="navlink dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Reach Out
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="">Send</a></li>
+                        <li><a class="dropdown-item" href="">Search</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="navlink" href="">How To</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navlink" href="">About Us</a>
+                    <a class="navlink" href="{% url 'about_us' %}">About Us</a>
                 </li>
             </ul>
         </div>

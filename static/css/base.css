@@ -1,7 +1,20 @@
 /* Global Styles */
 
+:root {
+    --ff: 'Nunito', sans-serif;
+
+    --fw-n: 400;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --primary-color: #00704a;
+    --secondary-color: #56bad6;
+    --tertiary-color: #1083a3;
+    --accent-active: #a31040;
+}
+
 body {
-    font-family: 'Alegreya', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer p, nav p {
@@ -64,17 +77,21 @@ h1, h2, h3 ,h4, h5 {
 
 /* Navbar */
 
-/* .navbar-brand {
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
     background: url("../img/logo.svg") no-repeat left;
     height: 3.5rem;
     width: 12.5rem;
-} */
+}
 
 .navlink {
     font-family: 'Nunito', san-serif;
     font-size: 1.25rem;
     font-weight: 300;
-    color: #00704a;
+    color: var(--primary-color);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     text-decoration: none;
@@ -83,12 +100,23 @@ h1, h2, h3 ,h4, h5 {
 .navlink:hover {
     text-decoration: none;
     list-style-type: none;
-    color: #a31040;
+    color: var(--accent-active);
+}
+
+.dropdown-menu {
+    border-radius: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-item {
+    color: var(--primary-color);
 }
 
 #menu-toggle-button {
-    border: 2px solid #00704a;
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
+
+}
 
 /* Index Page CSS */
 
@@ -99,7 +127,7 @@ h1, h2, h3 ,h4, h5 {
 .here-to-help {
     width: 90%;
     padding: 5rem;
-    background: url("/static/hands2.png")
+    background: url("/static/hands2.png");
 }
 
 .here-to-help-text {
@@ -111,4 +139,20 @@ h1, h2, h3 ,h4, h5 {
 
 .kate {
     border: 1px solid black;
+}
+
+
+/* About Us */
+#about-hero {
+    background-image: url("/media/about-hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tertiary-color);
 }
