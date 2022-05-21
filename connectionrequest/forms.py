@@ -23,26 +23,24 @@ class ConnectionRequestForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            "recipient_name": "Contact Name",
+            "recipient_name": "Contact Name ",
             "recipient_email": "Email Address",
-            "connection_reason": "Why are you reaching out",
-            "custom_message": "Add a custom message if you like",
+            "connection_reason": "What are you struggling with? ",
+            "custom_message": "Add a custom message if you like ",
         }
 
         self.fields["recipient_name"].widget.attrs["autofocus"] = True
         for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f"{placeholders[field]} *"
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs["placeholder"] = placeholder
-            self.fields[field].label = False
+            placeholder = placeholders[field]
+            self.fields[field].label = placeholder
 
 
 class ConnectionSearchForm(forms.Form):
     """Class for Connection Request Search"""
 
-    search_uuid = forms.UUIDField(label="Connection Code ")
+    search_uuid = forms.UUIDField(
+        label="Connection Code "
+    )
 
 
 class ConnectionResponseForm(forms.ModelForm):
@@ -70,9 +68,5 @@ class ConnectionResponseForm(forms.ModelForm):
 
         self.fields["response_decision"].widget.attrs["autofocus"] = True
         for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f"{placeholders[field]} *"
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs["placeholder"] = placeholder
+            placeholder = placeholders[field]
             self.fields[field].label = placeholder
