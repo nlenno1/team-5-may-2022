@@ -1,42 +1,14 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.core.mail import send_mail
-from django.template.loader import render_to_string
-from django.conf import settings
 from django.contrib import messages
 
 from .models import ConnectionRequest
 from .forms import (ConnectionRequestForm, ConnectionSearchForm, 
                     ConnectionResponseForm)
-
-
-def send_connection_email(data):
-    """Send the user a class cancellation email"""
-
-    subject = render_to_string(
-        "connectionrequest/connection-email/connection-email-subject.txt",
-        {
-            "name": data.recipient_name
-        },
-    )
-    body = render_to_string(
-        "connectionrequest/connection-email/connection-email-body.txt",
-        {
-            "data": data,
-        },
-    )
-
-    send_mail(
-        subject,
-        body,
-        settings.DEFAULT_FROM_EMAIL,
-        [
-            data.recipient_email,
-        ],
-    )
+from .utils import send_connection_email, send_response_email
 
 
 def send_connection_request(request):
-    """ A view to return the connection request page """
+    """ A view to send a connection request """
 
     form = ConnectionRequestForm()
 
@@ -66,7 +38,7 @@ def send_connection_request(request):
 
 
 def connection_request_search(request):
-    """ A view to return the connection request page """
+    """ A view to find a specific connection request """
 
     form = ConnectionSearchForm()
 
@@ -77,12 +49,18 @@ def connection_request_search(request):
             connection_request = get_object_or_404(ConnectionRequest, 
                                                    request_id=connection_code)
             if connection_request:
-                messages.success(
-                    request,
-                    f"Connection Request {connection_code} Found",
-                )
-                return redirect("respond_to_connection_request",
-                                connection_code)
+                if connection_request.response_decision == "":
+                    messages.success(
+                        request,
+                        f"Connection Request {connection_code} Found",
+                    )
+                    return redirect("respond_to_connection_request",
+                                    connection_code)
+                else:
+                    messages.error(
+                        request,
+                        f"Connection Request {connection_code} has already had a responce",
+                    )
             else:
                 messages.error(
                     request,
@@ -116,6 +94,7 @@ def respond_to_connection_request(request, connection_code):
             connection_request.response_decision = form.cleaned_data.get("response_decision")
             connection_request.custom_response_text = form.cleaned_data.get("custom_response_text")
             connection_request.save()
+            send_response_email(connection_request)
             messages.success(
                 request,
                 f"Connection response sent for Request \
