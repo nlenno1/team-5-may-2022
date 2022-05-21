@@ -1,0 +1,33 @@
+{% load static %}
+
+<!-- NAVBAR STYLING -->
+<nav class="navbar navbar-light navbar-expand-md" id="main-nav">
+    <div class="container-fluid">
+        <!-- <a href="{% url 'home' %}" class="navbar-brand"></a> -->
+        <a src="{{ MEDIA_URL }}logo.svg"></a>
+        <button id="menu-toggle-button" class="navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="navlink" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="">Reach Out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="">How To</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navlink" href="">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
