@@ -16,12 +16,22 @@ def send_connection_request(request):
         form = ConnectionRequestForm(request.POST)
         if form.is_valid():
             new_connection_request = form.save()
-            send_connection_email(new_connection_request)
-            messages.success(
-                request,
-                f"Connection Request sent to  \
-                {new_connection_request.recipient_email}",
+            exisiting_request = ConnectionRequest.objects.filter(
+                recipient_email=new_connection_request.recipient_email,
+                sender_email=new_connection_request.sender_email
             )
+            if not exisiting_request:
+                send_connection_email(new_connection_request)
+                messages.success(
+                    request,
+                    f"Connection Request sent to  \
+                    {new_connection_request.recipient_email}",
+                )
+            else:
+                messages.error(
+                    request,
+                    "You have already sent an email to that person",
+                )
         else:
             messages.error(
                 request,
