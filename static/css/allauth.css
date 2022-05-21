@@ -1,0 +1,67 @@
+/* AllAuth Forms */
+
+p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: ease-in-out .3s;
+}
+
+p a:hover {
+    color: #00704a;
+}
+
+button, .button {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25em;
+    border: 1px solid #000;
+    color: #000;
+    transition: .15s ease-in-out;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+form button[type="submit"] {
+    background-color: #1083a3;
+    color: #fafafa;
+}
+
+form button[type="submit"]:hover {
+    background-color: rgb(0, 112, 75);
+    color: #fafafa;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgb(0, 112, 75)!important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 112, 75, .25);
+}
+
+#allauth-content {
+    min-height: calc(100vh - 200px)
+}
+
+#allauth-content .form-group label {
+    width: 100%;
+    text-align: left !important;
+}
+
+.allauth-form-inner-content .text-center {
+    margin-top: 2rem;
+    margin-bottom: 3rem
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
