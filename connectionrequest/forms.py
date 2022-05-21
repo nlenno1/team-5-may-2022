@@ -44,3 +44,35 @@ class ConnectionSearchForm(forms.Form):
 
     search_uuid = forms.UUIDField(label="Connection Code ")
 
+
+class ConnectionResponseForm(forms.ModelForm):
+    """Class Connection Response"""
+
+    class Meta:
+        """Update Class Meta Data"""
+
+        model = ConnectionRequest
+        fields = (
+            "response_decision",
+            "custom_response_text",
+        )
+
+    def __init__(self, *args, **kwargs):
+        """
+        Add placeholders and classes, remove auto-generated
+        labels and set autofocus on first field
+        """
+        super().__init__(*args, **kwargs)
+        placeholders = {
+            "response_decision": "Are you willing to talk about this subject",
+            "custom_response_text": "You can add a personalised response if you would like",
+        }
+
+        self.fields["response_decision"].widget.attrs["autofocus"] = True
+        for field in self.fields:
+            if self.fields[field].required:
+                placeholder = f"{placeholders[field]} *"
+            else:
+                placeholder = placeholders[field]
+            self.fields[field].widget.attrs["placeholder"] = placeholder
+            self.fields[field].label = placeholder
