@@ -64,8 +64,7 @@ def connection_request_search(request):
             connection_request = get_object_or_404(ConnectionRequest, 
                                                    request_id=connection_code)
             if connection_request:
-                print(connection_request.response_decision)
-                if connection_request.response_decision == None:
+                if connection_request.response_decision is None:
                     messages.success(
                         request,
                         f"Connection Request {connection_code} Found",
