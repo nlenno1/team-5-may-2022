@@ -50,6 +50,6 @@ def send_response_email(data):
         body,
         settings.DEFAULT_FROM_EMAIL,
         [
-            data.recipient_email,
+            data.sender_email,
         ],
     )

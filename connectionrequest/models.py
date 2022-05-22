@@ -43,6 +43,8 @@ class ConnectionRequest(models.Model):
     custom_response_text = models.TextField(null=True, blank=True)
     request_date = models.DateTimeField(auto_now_add=True)
 
+    sender_username = models.CharField(max_length=254, null=True, blank=True)
+
     def __str__(self):
         """Return description string"""
         request_desc = f"Connection Request {self.request_id} \

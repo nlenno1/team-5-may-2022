@@ -7,7 +7,6 @@ from .forms import (ConnectionRequestForm, ConnectionSearchForm,
                     ConnectionResponseForm)
 from .utils import send_connection_email, send_response_email
 
-
 @login_required
 def send_connection_request(request):
     """ A view to send a connection request """
@@ -24,6 +23,7 @@ def send_connection_request(request):
             if len(exisiting_request) == 0:
                 new_connection_request = form.save()
                 new_connection_request.sender_email = request.user.email
+                new_connection_request.sender_username = request.user.username
                 new_connection_request.save()
                 send_connection_email(
                     new_connection_request,
