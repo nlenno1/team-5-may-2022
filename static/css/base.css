@@ -185,8 +185,8 @@ h1, h2, h3 ,h4, h5 {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 20%;
+    right: 25%;
     z-index: 99999999999;
 }
 
