@@ -7,6 +7,11 @@
     --fw-m: 600;
     --fw-b: 800;
 
+    --text-primary: #1083a3;
+    --text-secondary: #363946;
+    --text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+                    0px -5px 35px rgba(255, 255, 255, 0.3);
+
     --primary-color: #00704a;
     --secondary-color: #56bad6;
     --tertiary-color: #1083a3;
@@ -84,6 +89,10 @@ h5 {
     background-color: rgba(163, 16, 64, 1)
 }
 
+.text-shadow {
+    text-shadow: var(--text-shadow);
+}
+
 /* Navbar */
 
 .navbar {
@@ -126,6 +135,11 @@ h5 {
     border-radius: 5px;
 }
 
+/* Margin top for every page */
+.page-margin {
+    margin-top: 5rem;
+}
+
 /* Index Page CSS */
 
 /* .jumbotron {
@@ -150,22 +164,6 @@ h5 {
 }
 
 
-
-/* About Us */
-#about-hero {
-    background-image: url("/media/about-hero.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--tertiary-color);
-}
-
 /* How To Use Page */
 
 .how-to-jumbotron {
@@ -184,10 +182,75 @@ h5 {
     font-size: 7.5rem;
 }
 
+/* About Us */
+#about-hero {
+    background-image: url("/media/about-hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.text-shadow-primary {
+    color: var(--primary-color);
+    text-shadow: var(--text-shadow);
+}
+
+.team-member {
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+}
+
+.icon-holder {
+    height: 14rem;
+    text-align: center;
+    margin: 0px;
+    border-radius: 3px;
+    font-size: 7.5rem;
+}
+
 .icon-holder:hover .icon {
     transform: scale(1.25);
     transition-duration: 0.5s;
+
+.about-icons {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    list-style-type: none;
 }
+
+.about-icons:hover {
+    color: var(--accent-active)
+}
+
+.blurb {
+    color: var(--text-secondary);
+}
+
+.team-card {
+    border: 2px solid var(--primary-color);
+}
+
+.team-card:hover {
+    border: 2px solid var(--secondary-color);
+}
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -217,7 +280,6 @@ h5 {
     top: -10px;
     right: 36px;
 }
-
 
 .arrow-primary {
     border-bottom-color: #007bff !important;

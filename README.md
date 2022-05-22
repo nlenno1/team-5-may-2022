@@ -1,12 +1,12 @@
-# Reach Out 
+# Reach Out
 
-![Reach logo](./assets/images/readme/hands.png) 
+![Reach logo](./assets/images/readme/hands.png)
 
 A project that aims to help struggling people take the first steps in reaching out to talk to their friends and family for support.
 
 This project is a collaborative effort, made possible by:
 
-Abhisek Joshi <a href="https://www.linkedin.com/in/abhisekjoshi/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/nofursad"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Baiju Abraham <a href="https://www.linkedin.com/in/abhisekjoshi/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/baijuka"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Chris Lawbuary <a href="https://www.linkedin.com/in/abhisekjoshi/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/chrislawbuary"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Joy Zadan <a href="https://www.linkedin.com/in/joy-araneta-zadan/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/JoyZadan"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Nick Lennon <a href="https://www.linkedin.com/in/n-lennon/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/nlenno1"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Sam Dainton <a href="https://www.linkedin.com/in/samuel-dainton/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/Samuel-Dainton"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a>
+Abhisek Joshi <a href="https://www.linkedin.com/in/abhisekjoshi/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/nofursad"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Baiju Abraham <a href="https://www.linkedin.com/in/baiju-abraham-a40633225/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/baijuka"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Chris Lawbuary <a href="https://www.linkedin.com/in/abhisekjoshi/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/chrislawbuary"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Joy Zadan <a href="https://www.linkedin.com/in/joy-araneta-zadan/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/JoyZadan"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Nick Lennon <a href="https://www.linkedin.com/in/n-lennon/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/nlenno1"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a> | Sam Dainton <a href="https://www.linkedin.com/in/samuel-dainton/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="icon | LinkedIn" width="15px" height="15px"/> </a><a href="https://github.com/Samuel-Dainton"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icon | GitHub" width="15px" height="15px"/></a>
 
 ## Contents
 
@@ -21,7 +21,7 @@ Table of Contents - Click to Expand
   - [Features and Scope Planning](#features-and-scope-planning)
   - [Wireframes](#wireframes)
   - [Typography](#typography)
-  - [Colors](#color-scheme)  
+  - [Colors](#color-scheme)
 - [Features Implemented](#features-implemented)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
@@ -34,14 +34,14 @@ Table of Contents - Click to Expand
 - [Credits](#credits)
   - [Content](#content)
   - [Media](#media)
-  - [Content](#further-learning)   
+  - [Content](#further-learning)
 
 </details>
 
 -----
 
 ## About
-Reach Out is a project designed with the hopes of giving confidence to people who are struggling with a difficult topics of conversation by starting that conversation with someone important to them anonymously. This may include a young person who wants to talk to their parent about gender identity, someone who is suffering with mental illness and isn't confident that their friends would be willing to listen or perhaps a person who is feeling isolated and alone. We believe there are many people out there who first need to hear that their family and friends are happy for them to reach out and connect so that they can get the support they need from the people that matter most. 
+Reach Out is a project designed with the hopes of giving confidence to people who are struggling with a difficult topics of conversation by starting that conversation with someone important to them anonymously. This may include a young person who wants to talk to their parent about gender identity, someone who is suffering with mental illness and isn't confident that their friends would be willing to listen or perhaps a person who is feeling isolated and alone. We believe there are many people out there who first need to hear that their family and friends are happy for them to reach out and connect so that they can get the support they need from the people that matter most.
 
 -----
 
@@ -50,10 +50,10 @@ Reach Out is a project designed with the hopes of giving confidence to people wh
 ### User Stories
 - As a user I want to send a message to someone I know, inviting them to talk.
 
-- I want the message to be anonymous, it will be at my discretion to reveal my identity.  
+- I want the message to be anonymous, it will be at my discretion to reveal my identity.
 
 - As a website we will need users to create accounts and verify their age and email for security.
-  
+
 - As a user I would like to be able to change my password and delete my account.
 
 - As a user I would like ideas on how to create my message or see examples from the past to give me confidence.
