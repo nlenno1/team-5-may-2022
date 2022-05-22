@@ -22,11 +22,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-footer p, nav p {
+footer p,
+nav p {
     font-size: 1rem;
 }
 
-h1, h2, h3 ,h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Nunito', san-serif;
 }
 
@@ -207,6 +212,23 @@ h1, h2, h3 ,h4, h5 {
     text-shadow: var(--text-shadow);
 }
 
+.team-member {
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+}
+
+.icon-holder {
+    height: 14rem;
+    text-align: center;
+    margin: 0px;
+    border-radius: 3px;
+    font-size: 7.5rem;
+}
+
+.icon-holder:hover .icon {
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+
 .about-icons {
     color: var(--tertiary-color);
     text-decoration: none;
@@ -239,8 +261,8 @@ h1, h2, h3 ,h4, h5 {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 20%;
+    right: 25%;
     z-index: 99999999999;
 }
 
@@ -296,3 +318,45 @@ h1, h2, h3 ,h4, h5 {
     border-bottom-color: #343a40 !important;
 }
 
+/* Support Images */
+
+.media {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.media-image {
+    display: block;
+}
+
+.media-body {
+    background: rgba(48, 56, 67, 0.9);
+    bottom: 0;
+    color: white;
+    font-size: 1em;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.media-body:hover {
+    opacity: 1;
+}
+
+.media-body h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.help-banner {
+    text-align: center;
+    padding-top: 3rem;
+}

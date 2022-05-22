@@ -25,7 +25,11 @@ def send_connection_request(request):
                 new_connection_request = form.save()
                 new_connection_request.sender_email = request.user.email
                 new_connection_request.save()
-                send_connection_email(new_connection_request)
+                send_connection_email(
+                    new_connection_request,
+                    request.build_absolute_uri('/connection-request/respond/'),
+                    request.build_absolute_uri('/connection-request/search')
+                )
                 messages.success(
                     request,
                     f"Connection Request sent to  \
