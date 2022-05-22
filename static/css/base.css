@@ -249,8 +249,13 @@ h5 {
 
 .team-card:hover {
     border: 2px solid var(--secondary-color);
+    width: 18rem;
 }
 
+.team-member {
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+}
 
 /* ------------------------------- bootstrap toasts */
 
