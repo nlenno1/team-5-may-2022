@@ -11,14 +11,16 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 if os.path.isfile('env.py'):
     import env
 
-DB_SECRET_KEY = os.environ.get("DB_SECRET_KEY")
+development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +32,10 @@ SECRET_KEY =  os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['team5-reachout.herokuapp.com', 'localhost']
+if development:
+    ALLOWED_HOSTS = ['localhost']
+else:
+    ALLOWED_HOSTS = ['team5-reachout.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -71,8 +76,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),
+            # os.path.join(BASE_DIR, 'templates'),
+            # os.path.join(BASE_DIR, 'templates', 'allauth'),
+            TEMPLATES_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -94,10 +100,7 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
-    # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
-
-    # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
@@ -119,23 +122,28 @@ WSGI_APPLICATION = 'reachout.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'reachout',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': f'mongodb+srv://reachout-dev:{DB_SECRET_KEY}@myfirstcluster.exgjq.mongodb.net/?retryWrites=true&w=majority'
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
-}
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'reachout',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': f'mongodb+srv://reachout-dev:{DB_SECRET_KEY}@myfirstcluster.exgjq.mongodb.net/?retryWrites=true&w=majority'
+#         }
+#     }
+# }
 
 
 # Password validation
