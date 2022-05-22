@@ -10,7 +10,7 @@
     --text-primary: #1083a3;
     --text-secondary: #363946;
     --text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-                    0px -5px 35px rgba(255, 255, 255, 0.3);
+        0px -5px 35px rgba(255, 255, 255, 0.3);
 
     --primary-color: #00704a;
     --secondary-color: #56bad6;
@@ -25,6 +25,7 @@ body {
 footer p,
 nav p {
     font-size: 1rem;
+    margin-left: 10px;
 }
 
 h1,
@@ -74,7 +75,7 @@ h5 {
 }
 
 .green-bg-trans {
-    background-color: rgba(0, 112, 74, 0.3)
+    background-color: rgba(0, 112, 74, 0.6)
 }
 
 .gray-bg-trans {
@@ -142,9 +143,14 @@ h5 {
 
 /* Index Page CSS */
 
-/* .jumbotron {
-    min-height: 100vh
-} */
+.index-hero-text-container {
+    text-shadow: var(--text-shadow);
+    background-color: rgba(16, 131, 163, 0.6);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    color: white;
+}
 
 .here-to-help {
     width: 90%;
@@ -159,10 +165,23 @@ h5 {
 
 }
 
+.testimonies-container {
+    padding-top: 3rem;
+}
+
 .kate {
     border: 1px solid black;
 }
 
+.signup-divider {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.promise {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
 /* How To Use Page */
 
@@ -196,6 +215,34 @@ h5 {
     align-items: center;
     text-align: center;
     color: var(--tertiary-color);
+}
+
+#index-hero {
+    background-image: url("/media/hands-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#how-to-hero {
+    background-image: url("/media/how-to-hero.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .about-container {
@@ -363,3 +410,7 @@ h5 {
     text-align: center;
     padding-top: 3rem;
 }
+
+.right-push {
+    text-align: right;
+    }
