@@ -4,7 +4,23 @@ from django.db import models
 CONNECTION_REASONS = {
     ("loneliness", 'Loneliness'),
     ("depression", 'Depression'),
-}
+    ("their sexuality", 'Sexuality'),
+    ("their gender identity", 'Gender Identity'),
+    ("loss", 'Loss'),
+    ("grief", 'Grief'),
+    ("their finances", 'Finance'),
+    ("their religion", 'Religion'),
+    ("their belief", 'Belief'),
+    ("their relationships", 'Relationship'),
+    ("their marriage", 'Marriage'),
+    ("a Divorce", 'Divorce'),
+    ("their mental health", 'Mental Health'),
+    ("their health", 'Health'),
+    ("their physical wellbeing", 'Physical Wellbeing'),
+    ("their weight", 'Weight'),
+    ("anxiety", 'Anxiety'),
+    ("worries about death", 'Death'),
+    }
 
 RELATIONS = {
     ("family", "Family"),
