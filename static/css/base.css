@@ -74,7 +74,7 @@ h5 {
 }
 
 .green-bg-trans {
-    background-color: rgba(0, 112, 74, 0.3)
+    background-color: rgba(0, 112, 74, 0.6)
 }
 
 .gray-bg-trans {
@@ -142,9 +142,14 @@ h5 {
 
 /* Index Page CSS */
 
-/* .jumbotron {
-    min-height: 100vh
-} */
+.index-hero-text-container {
+    text-shadow: var(--text-shadow);
+    background-color: rgba(16, 131, 163, 0.6);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    color: white;
+}
 
 .here-to-help {
     width: 90%;
@@ -159,10 +164,23 @@ h5 {
 
 }
 
+.testimonies-container {
+    padding-top: 3rem;
+}
+
 .kate {
     border: 1px solid black;
 }
 
+.signup-divider {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.promise {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
 /* How To Use Page */
 
@@ -198,6 +216,20 @@ h5 {
     color: var(--tertiary-color);
 }
 
+#index-hero {
+    background-image: url("/media/hands-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -227,7 +259,7 @@ h5 {
 
 .icon-holder:hover .icon {
     transform: scale(1.25);
-    transition-duration: 0.5s;
+    transition-duration: 0.5s;}
 
 .about-icons {
     color: var(--tertiary-color);
