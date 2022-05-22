@@ -1,4 +1,4 @@
-You have recieved a connection response from {% if data.recipient_name %}{{ data.recipient_name }}{% else %}{{ data.recipient_email }}{% endif %}
+You have recieved a connection response from {{ data.recipient_name }}
 
 {% if data.response_decision == "accept" %}They want to talk to you about this issue so get in touch with them!{% else %}Unfortunatly they are not open to this conversation at this time{% endif %}
 

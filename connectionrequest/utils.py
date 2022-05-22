@@ -4,7 +4,7 @@ from django.template.loader import render_to_string
 from django.conf import settings
 
 
-def send_connection_email(data):
+def send_connection_email(data, auto_website_url, website_url):
     """Send the user a class cancellation email"""
 
     subject = render_to_string(
@@ -17,6 +17,8 @@ def send_connection_email(data):
         "connectionrequest/connection-email/connection-email-body.txt",
         {
             "data": data,
+            "auto_website_link": auto_website_url + str(data.request_id),
+            "website_link": website_url,
         },
     )
 

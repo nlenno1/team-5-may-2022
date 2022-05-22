@@ -12,6 +12,7 @@ class ConnectionRequestForm(forms.ModelForm):
         fields = (
             "recipient_name",
             "recipient_email",
+            "relation",
             "connection_reason",
             "custom_message",
         )
@@ -25,8 +26,10 @@ class ConnectionRequestForm(forms.ModelForm):
         placeholders = {
             "recipient_name": "Contact Name ",
             "recipient_email": "Email Address",
-            "connection_reason": "What are you struggling with? ",
-            "custom_message": "Add a custom message if you like ",
+            "relation": "What is this persons relation to you? ",
+            "connection_reason": "Why are you reaching out",
+            "custom_message": "Add a custom message if you like",
+
         }
 
         self.fields["recipient_name"].widget.attrs["autofocus"] = True
