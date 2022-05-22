@@ -1,5 +1,24 @@
 /* AllAuth Forms */
 
+/* global styles */
+:root {
+    --ff: 'Nunito', sans-serif;
+
+    --fw-n: 400;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    --text-primary: #1083a3;
+    --text-secondary: #363946;
+    --text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+                    0px -5px 35px rgba(255, 255, 255, 0.3);
+
+    --primary-color: #00704a;
+    --secondary-color: #56bad6;
+    --tertiary-color: #1083a3;
+    --accent-active: #a31040;
+}
+
 p a {
     text-decoration: none;
     font-weight: 600;
