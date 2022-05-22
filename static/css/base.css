@@ -228,6 +228,7 @@ h5 {
 .icon-holder:hover .icon {
     transform: scale(1.25);
     transition-duration: 0.5s;
+}
 
 .about-icons {
     color: var(--tertiary-color);
@@ -261,13 +262,15 @@ h5 {
 
 .message-container {
     position: fixed;
-    top: 20%;
-    right: 25%;
-    z-index: 99999999999;
+    top: 15%;
+    right: 10%;
+    
+    z-index: 9999999;
 }
 
 .custom-toast {
     overflow: visible;
+    border-color: rgb(201, 201, 102);
 }
 
 .toast-capper {
