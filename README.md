@@ -69,9 +69,13 @@ We hope that the project will reach a wide range of demographics unbound by race
 
 ### Wireframes
 
+The finished website ended up looking quite different to our initial ideas. But the initial ideas helped build what we ended up with and we are happy with the new design choices taken.
+
 ![Wireframes](assets/images/readme/wireframe.png)
 
 ### Typography
+
+The fonts chosen are Nunito and Alegreya from google fonts.
 
 ![Typography](assets/images/readme/typography.png)
 
@@ -84,16 +88,25 @@ We dicided upon a deep green and complimentary blue as the main colors of choice
 ## Features Implemented
 Featured Implemented Upon Project Completion
 
+- User Registration
+- How to use
+- Ability to sent custom/template message anonymously
+- Private chat using generated code
+- About us
+- Support links
+- Testimonials
+
 -----
 
 ## Technologies Used
 This project makes use of the following languages, frameworks, and libraries:
 
 - Bootstrap
-
 - Django
-
 - Mongo
+- Python
+- Gunicorn
+- Toast
 
 -----
 
@@ -125,28 +138,28 @@ The final project was created using the following steps:
 
 ### Content
 
+Much of the layout of the site was designed around templates provided by dJango and Bootstrap.
+
 ### Media
+
+<details>
+<summary>
+Links to images used - Click to Expand
+</summary>
 https://www.pexels.com/photo/woman-wearing-yellow-button-up-long-sleeved-dress-shirt-774095/
 https://www.pexels.com/photo/man-in-red-jacket-1681010/
 https://www.pexels.com/photo/smiling-woman-wearing-earrings-and-black-collared-top-1197132/
 https://www.pexels.com/photo/woman-smiling-and-holding-teal-book-1181424/
 https://www.pexels.com/photo/man-wearing-white-dress-shirt-and-black-blazer-2182970/
 https://www.pexels.com/photo/photo-of-a-man-in-beige-button-up-collared-top-holding-beverage-drink-2599509/
-
 https://stock.adobe.com/uk/images/hands-holding-red-heart-health-care-love-organ-donation-wellbeing-family-insurance-csr-concept-world-heart-day-world-health-day-hope-gratitude-covid-19-coronavirus-relief-praying-concept/287274862?prev_url=detail
-
 https://stock.adobe.com/uk/images/take-care-of-yourself-napkin-concept/218872151?prev_url=detail
-
 https://stock.adobe.com/uk/images/group-of-volunteers-holding-soil-with-sprouts-in-hands-outdoors-top-view-space-for-text/284697050?prev_url=detail
-
 https://stock.adobe.com/uk/images/curly-haired-overweight-young-woman-in-blue-top-and-shorts-with-satisfaction-on-face-accepts-curvy-body-shape-in-stylish-bedroom/472948599?prev_url=detail
-
 https://www.betterup.com/blog/what-is-an-existential-crisis
-
 https://www.istockphoto.com/video/young-woman-visiting-male-psychologist-lying-on-the-comfortable-couch-during-gm1137325023-303251729
-
 https://eczema.org/helpline/
-
 https://www.mind.org.uk/information-support/
+</details>
 
 ### Further Learning

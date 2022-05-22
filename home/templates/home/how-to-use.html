@@ -2,40 +2,53 @@
 {% load static %}
 
 {% block content %}
-<section class="py-5 text-center container green-bg-trans how-to-jumbotron page-margin">
-    <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">How to Use Reach Out</h1>
-            <p class="lead text-muted">Below you'll find a guide that will lead you step by step on how to go about
-                preparing a
-                message to the people you want to contact. The only thing you will need is their email address.<br>
-            </p>
+
+<section id="how-to-hero" class="img-fluid">
+    <div class="about-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 index-hero-text-container">
+                <h1 class="display-4">How to Use Reach Out</h1>
+                <p>
+                    Below you'll find a guide that will lead you step by step on how to go about
+                    preparing a
+                    message to the people you want to contact. The only thing you will need is their email address.
+                </p>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="container marketing">
+<div class="container marketing testimonies-container">
     <div class="row">
         <div class="col-lg-4">
             <img class="rounded-circle" src="{{ MEDIA_URL }}user5.png" alt="Generic placeholder image" width="140"
                 height="140">
             <h2 class="red">Michael</h2>
-            <p>After my divorce I ended up living alone in an apartment closer to work. I had lost most of my friends because of what had
-                happened. I reached out to the people living in my apartment block for help and couldn't tell you at the time how surprised 
-                I was by the kindness of strangers. I have made many new friends and have been working hard to become better than the man I was
+            <p>After my divorce I ended up living alone in an apartment closer to work. I had lost most of my friends
+                because of what had
+                happened. I reached out through building managment to the other residents living in my apartment block 
+                and asking for help. I couldn't tell you, at the
+                time, how surprised
+                I was by the kindness of strangers. I have made many new friends and have been working hard to become
+                better than the man I was
                 before.
             </p>
 
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 right-push">
             <img class="rounded-circle" src="{{ MEDIA_URL }}user4.png" alt="Generic placeholder image" width="140"
                 height="140">
             <h2 class="green">Zack</h2>
-            <p>Whilst away at university I told my parents that someone close to them (I) was planning on transitioning. My father didn't
-                respond and my mother was very dismissive and against the idea. But, with the support services I found through this site I have found the words
-                and strength to speak about my feelings more confidently. Despite not getting the response I had hoped for it pushed me in the
-                right direction to start making the changes I need, I am much happier with who I am. I have since come out about it to my parents
-                and with the conversations we had online, I think it gave them time to reflect on what they might have seen coming.
+            <p>Whilst away at university I told my parents that someone close to them (I) was planning on transitioning.
+                My father didn't
+                respond and my mother was very dismissive and against the idea of someone she knew making such changes. But, with the support services I found
+                through this site I have found the words
+                and strength to speak about my feelings more confidently. Despite not getting the response I had hoped
+                for it has pushed me in the
+                right direction to start making the changes I need. I am much happier with who I am and have since come
+                out about it to my parents before trying to go for surgery.
+                With the conversations we had online, I think it has given them enough time to reflect on their thoughts of what they might have
+                sensed was coming.
             </p>
 
         </div><!-- /.col-lg-4 -->
@@ -43,10 +56,14 @@
             <img class="rounded-circle kate" src="{{ MEDIA_URL }}user6.png" alt="Generic placeholder image" width="140"
                 height="140">
             <h2 class="light-blue">Maria</h2>
-            <p>As a single mother I had struggled with alcohol abuse for a while. I used this platform to reach out to my friends to say that I
-                desperately needed help from people I could trust and that could keep the addiction I needed help fighting a secret. 
-                I have recieved a huge ammount of support, I have friends who help look after my child in the evenings when I go to my AA meetings,
-                I have been given a weath of information to help control my finances and I am making changes to better the lives of me and my child.
+            <p>As a single mother I had struggled with alcohol abuse for a while. I used this platform to reach out to
+                my friends to say that I
+                desperately needed help from people I could trust and that could keep the addiction I needed help
+                fighting a secret.
+                I have recieved a huge ammount of support, I have friends who help look after my child in the evenings
+                when I go to my AA meetings,
+                I have been given a weath of information to help regain control my finances and I am making changes to better
+                the lives of me and my child.
             </p>
 
         </div><!-- /.col-lg-4 -->
@@ -150,92 +167,98 @@
             <h2>
                 Supports Available to You
             </h2>
-            <p>If you or someoene who has reached out to you is struggling, we hope that the services below can help guide you in the right direction
+            <p>If you or someoene who has reached out to you is struggling, we hope that the services below can help
+                guide you in the right direction
                 on how to deal with these difficult topics of conversation or get you the help that is needed.
             </p>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/helping-someone-else/" target="_blank"><img alt="A picture of two people under a tree." class="img-fluid media-image"
+            <div class="media"><a href="https://www.mind.org.uk/information-support/helping-someone-else/"
+                    target="_blank"><img alt="A picture of two people under a tree." class="img-fluid media-image"
                         src="https://www.mind.org.uk/media/8747/two-people-in-a-meadow.jpg?format=webp&quality=70" />
-                    <div class="media-body">
-                        <h1>Helping Someone Else</h1>
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Helping Someone Else</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/tips-for-everyday-living/" target="_blank"><img alt="" class="img-fluid media-image"
-                        src="{{ MEDIA_URL }}tips.png" />
-                    <div class="media-body">
-                        <h1>Tips for Everyday Living</h1>
+            <div class="media"><a href="https://www.mind.org.uk/information-support/tips-for-everyday-living/"
+                    target="_blank"><img alt="" class="img-fluid media-image" src="{{ MEDIA_URL }}tips.png" />
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Tips for Everyday Living</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/drugs-and-treatments/" target="_blank"><img alt="" class="img-fluid media-image"
+            <div class="media"><a href="https://www.mind.org.uk/information-support/drugs-and-treatments/"
+                    target="_blank"><img alt="" class="img-fluid media-image"
                         src="https://www.mind.org.uk/media/8740/two-people-talking-sofa.jpg?format=webp&quality=70" />
-                    <div class="media-body">
-                        <h1>Therapies and Medication</h1>
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Therapies and Medication</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/legal-rights/" target="_blank"><img alt="" class="img-fluid media-image"
+            <div class="media"><a href="https://www.mind.org.uk/information-support/legal-rights/" target="_blank"><img
+                        alt="" class="img-fluid media-image"
                         src="https://www.mind.org.uk/media/8873/pencil-on-a-notebook.jpg?format=webp&quality=70" />
-                    <div class="media-body">
-                        <h1>Legal Rights</h1>
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Your Legal Rights</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/for-children-and-young-people/" target="_blank"><img alt="" class="img-fluid media-image"
+            <div class="media"><a href="https://www.mind.org.uk/information-support/for-children-and-young-people/"
+                    target="_blank"><img alt="" class="img-fluid media-image"
                         src="https://www.mind.org.uk/media/8678/person-wearing-headphones-grey-background.jpg?format=webp&quality=70" />
-                    <div class="media-body">
-                        <h1>Information for Young People</h1>
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Information for Young People</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/helplines/" target="_blank"><img alt="" class="img-fluid media-image"
-                        src="{{ MEDIA_URL }}helpline.png" />
-                    <div class="media-body">
-                        <h1>Helplines</h1>
+            <div class="media"><a href="https://www.mind.org.uk/information-support/helplines/" target="_blank"><img
+                        alt="" class="img-fluid media-image" src="{{ MEDIA_URL }}helpline.png" />
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Helplines</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/information-support/drugs-and-treatments/talking-therapy-and-counselling/how-to-find-a-therapist/" target="_blank"><img alt="" class="img-fluid media-image"
-                        src="{{ MEDIA_URL }}therapy.png" />
-                    <div class="media-body">
-                        <h1>How to Find a Therapist</h1>
+            <div class="media"><a
+                    href="https://www.mind.org.uk/information-support/drugs-and-treatments/talking-therapy-and-counselling/how-to-find-a-therapist/"
+                    target="_blank"><img alt="" class="img-fluid media-image" src="{{ MEDIA_URL }}therapy.png" />
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>How to Find a Therapist</h2>
                     </div>
                 </a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="media"></div>
-            <div class="media"><a href="https://www.mind.org.uk/need-urgent-help/" target="_blank"><img alt="" class="img-fluid media-image"
-                        src="{{ MEDIA_URL }}crisis.png" />
-                    <div class="media-body">
-                        <h1>Dealing with Crisis</h1>
+            <div class="media"><a href="https://www.mind.org.uk/need-urgent-help/" target="_blank"><img alt=""
+                        class="img-fluid media-image" src="{{ MEDIA_URL }}crisis.png" />
+                    <div class="media-body row no-gutters align-items-center">
+                        <h2>Dealing with Crisis</h2>
                     </div>
                 </a>
             </div>
         </div>
-        
-        
+
+
     </div>
 </div>
 

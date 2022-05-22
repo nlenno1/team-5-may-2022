@@ -10,7 +10,7 @@
     --text-primary: #1083a3;
     --text-secondary: #363946;
     --text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
-                    0px -5px 35px rgba(255, 255, 255, 0.3);
+        0px -5px 35px rgba(255, 255, 255, 0.3);
 
     --primary-color: #00704a;
     --secondary-color: #56bad6;
@@ -25,6 +25,7 @@ body {
 footer p,
 nav p {
     font-size: 1rem;
+    margin-left: 10px;
 }
 
 h1,
@@ -230,6 +231,20 @@ h5 {
     text-align: center;
 }
 
+#how-to-hero {
+    background-image: url("/media/how-to-hero.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -259,7 +274,8 @@ h5 {
 
 .icon-holder:hover .icon {
     transform: scale(1.25);
-    transition-duration: 0.5s;}
+    transition-duration: 0.5s;
+}
 
 .about-icons {
     color: var(--tertiary-color);
@@ -387,3 +403,7 @@ h5 {
     text-align: center;
     padding-top: 3rem;
 }
+
+.right-push {
+    text-align: right;
+    }
