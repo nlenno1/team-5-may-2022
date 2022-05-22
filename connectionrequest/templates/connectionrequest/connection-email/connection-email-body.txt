@@ -4,9 +4,9 @@ You have been sent this email by ReachOut a service designed to help people comm
 
 We are reaching out to you as there is someone in your {{ data.relation }} that is struggling with {{ data.connection_reason }} which is a topic that they find hard to talk about in person.
 
-The person in question would like to know if you are willing to talk to them about this issue.
+The person in question would like to know if you are willing to talk to them about this issue.{% if data.custom_message "= "" %}They sent you this custom message: {{ data.custom_message }}{% endif %}
 
-To repond to this email please follow this link to our website where you will be abke to respond.
+To repond to this email please follow this link to our website where you will be able to respond.
 While you are there you can learn more about ReachOut and what we do.
 
 Website Link : {{ auto_website_link }}
@@ -14,7 +14,7 @@ Website Link : {{ auto_website_link }}
 If the link does not work visit us at {{ website_link }} and enter the Connection Code below:
 Connection Code : {{ data.request_id }}
 
-If you are thinking this is a suspisious email, I would reccomend you search for our website, ReachOut, through your favourite search engine and see what we are about. You can also enter the Connection Code there, without using any of the links in this email, just by clicking Search.
+If you are thinking this is a suspicious email, I would recommend you search for our website, ReachOut, through your favourite search engine and see what we are about. You can also enter the Connection Code there, without using any of the links in this email, just by clicking Search.
 
 Thank you for taking the time to read this email and we hope you will Reach Out to someone who is looking for your support.
 
