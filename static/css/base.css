@@ -207,11 +207,6 @@ h1, h2, h3 ,h4, h5 {
     text-shadow: var(--text-shadow);
 }
 
-.team-member {
-    color: var(--text-secondary);
-    text-shadow: var(--text-shadow);
-}
-
 .about-icons {
     color: var(--tertiary-color);
     text-decoration: none;
@@ -232,8 +227,13 @@ h1, h2, h3 ,h4, h5 {
 
 .team-card:hover {
     border: 2px solid var(--secondary-color);
+    width: 18rem;
 }
 
+.team-member {
+    color: var(--text-secondary);
+    text-shadow: var(--text-shadow);
+}
 
 /* ------------------------------- bootstrap toasts */
 
