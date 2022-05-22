@@ -4,7 +4,23 @@ from django.db import models
 CONNECTION_REASONS = {
     ("loneliness", 'Loneliness'),
     ("depression", 'Depression'),
-}
+    ("their sexuality", 'Sexuality'),
+    ("their gender identity", 'Gender Identity'),
+    ("loss", 'Loss'),
+    ("grief", 'Grief'),
+    ("their finances", 'Finance'),
+    ("their religion", 'Religion'),
+    ("their belief", 'Belief'),
+    ("their relationships", 'Relationship'),
+    ("their marriage", 'Marriage'),
+    ("a Divorce", 'Divorce'),
+    ("their mental health", 'Mental Health'),
+    ("their health", 'Health'),
+    ("their physical wellbeing", 'Physical Wellbeing'),
+    ("their weight", 'Weight'),
+    ("anxiety", 'Anxiety'),
+    ("worries about death", 'Death'),
+    }
 
 RELATIONS = {
     ("family", "Family"),
@@ -42,6 +58,8 @@ class ConnectionRequest(models.Model):
     )
     custom_response_text = models.TextField(null=True, blank=True)
     request_date = models.DateTimeField(auto_now_add=True)
+
+    sender_username = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         """Return description string"""

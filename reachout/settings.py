@@ -30,16 +30,18 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY =  os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 if development:
     DEBUG = True
 else:
     DEBUG = False
 
-
 if development:
     ALLOWED_HOSTS = ['localhost']
+    DEBUG = True
 else:
     ALLOWED_HOSTS = ['team5-reachout.herokuapp.com', 'localhost']
+    DEBUG = False
 
 # Application definition
 
