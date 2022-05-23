@@ -21,6 +21,14 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
 }
 
 footer p,
@@ -124,7 +132,6 @@ h5 {
 }
 
 .dropdown-menu {
-    border-radius: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -147,6 +154,15 @@ h5 {
 .index-hero-text-container {
     text-shadow: var(--text-shadow);
     background-color: rgba(16, 131, 163, 0.6);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    color: white;
+}
+
+.how-to-hero-text-container {
+    text-shadow: var(--text-shadow);
+    background-color: rgba(0, 112, 74, 0.6);
     padding: 1rem;
     border-radius: 5px;
     margin: 0.5rem;
@@ -261,6 +277,9 @@ h5 {
     width: auto;
     max-width: 50rem;
     margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
 }
 
 .home-container {
@@ -275,6 +294,10 @@ h5 {
 .text-shadow-primary {
     color: var(--primary-color);
     text-shadow: var(--text-shadow);
+}
+
+.team {
+    padding-bottom: 3rem;
 }
 
 .team-member {
