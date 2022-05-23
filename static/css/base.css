@@ -109,6 +109,10 @@ h5 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.navbar-dark .navbar-text a:hover {
+    color: #000;
+}
+
 .navbar-brand {
     background: url("../img/logo.svg") no-repeat left;
     height: 3.5rem;
