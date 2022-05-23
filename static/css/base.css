@@ -160,6 +160,15 @@ h5 {
     color: white;
 }
 
+.how-to-hero-text-container {
+    text-shadow: var(--text-shadow);
+    background-color: rgba(0, 112, 74, 0.6);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    color: white;
+}
+
 .here-to-help {
     width: 90%;
     padding: 5rem;
@@ -268,6 +277,9 @@ h5 {
     width: auto;
     max-width: 50rem;
     margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
 }
 
 .home-container {
@@ -282,6 +294,10 @@ h5 {
 .text-shadow-primary {
     color: var(--primary-color);
     text-shadow: var(--text-shadow);
+}
+
+.team {
+    padding-bottom: 3rem;
 }
 
 .team-member {
