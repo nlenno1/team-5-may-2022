@@ -101,12 +101,55 @@ Featured Implemented Upon Project Completion
 ## Technologies Used
 This project makes use of the following languages, frameworks, and libraries:
 
-- Bootstrap
-- Django
-- Mongo
-- Python
-- Gunicorn
-- Toast
+<details>
+<summary> Languages and Libraries</summary>
+
+- [Django](https://www.djangoproject.com/) - Python Framework
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - Programming Language
+- [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Programming Language
+- [Python](https://www.python.org/) - Programming Language
+- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Template Language
+- [jQuery](https://jquery.com/) - JavaScript Library
+- [Bootstrap v5](https://getbootstrap.com/) - Library Import
+- [Google Fonts](https://fonts.google.com/) - Typography Import
+- [Font Awesome](https://fontawesome.com/) - Icon provider
+
+</details>
+
+<details>
+<summary> IDE and Version Control</summary>
+
+- [Git Pod](https://gitpod.io/) - IDE (Integrated Development Environment)
+- [Git](https://git-scm.com/) - Version Control Tool
+- [Github](https://github.com/) - Cloud based hosting service to manager my Git Repositories
+- [Code Institute GitPod Template](https://github.com/Code-Institute-Org/gitpod-full-template) - Provides GitPod extensions to help with code production
+</details>
+
+<details>
+<summary> Design and Development</summary>
+
+- [Google Chrome Development Tools](https://developer.chrome.com/docs/devtools/) - Design/Development Tools
+- [Balsamiq](https://balsamiq.com/) - Wireframe designer software
+- [Coolors](https://coolors.co/) - Colour scheme generator
+- [Lucid App](https://lucid.app/) - Diagram creator
+</details>
+
+<details>
+<summary> Validation and Testing</summary>
+
+- [CSS Beautifier](https://www.freeformatter.com/css-beautifier.html) - Beautifying CSS Code
+- [JavaScript Validator](https://beautifytools.com/javascript-validator.php) - Validating JS code
+- [Am I Responsive?](http://ami.responsivedesign.is/) - Webpage Breakpoint visualizer and image generator
+- [Black](https://black.readthedocs.io/en/stable/)- Code Formatter
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [Browser Stack Responsive Design Tester](https://www.browserstack.com/responsive)
+- [Media Genesis RESPONSIVE WEB DESIGN CHECKER](https://responsivedesignchecker.com/)
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [pylint](https://pylint.org/)
+</details>
+
+<details>
 
 -----
 
@@ -115,22 +158,54 @@ This project makes use of the following languages, frameworks, and libraries:
 ### Validation Results
 HTML
 
+HTML Validation returned with a number of errors, but nothing that would break the project as the errors being returned were the validator not recognizing how we were linking to images.
+
 CSS
+
+Validation was performed using the W3C CSS validation service which returned no errors.
 
 Lighthouse
 
+We managed to achieve high scores on lighthouse. Performance could be improved by converting some of the images into other formats, but the hero images at least are quick and responsive so as not to negatively impact the user experience.
+
+![Lighthouse](./assets/images/readme/lighthouse.png)
+
 Placeholders
+
+
 
 -----
 
 ## Deployment
 Continuous Deployment practices via GitHub Pages were implemented for this project.
 
-The final project was created using the following steps:
-
-- 1
-- 2
-- 3
+A live version of this site has already been deployed [here](https://team5-reachout.herokuapp.com/)
+This site can be deployed using the Heroku app. To do so you will need to:
+ 
+Create an account on Heroku
+Once signed in click on the "Create New App"
+Enter a name for the app and select the appropriate region
+Click on create app
+Go to the "Settings" tab
+Add a config vars with the key: PORT and value: 8000
+Click "Add Buildpack"
+Add "nodejs" and then "python", the order is important here.
+ 
+If Heroku is functioning with github correctly.
+    Go to the "Deploy" tab
+    Select the Github option and connect to github
+    Search for the name of the github repository
+    Click on Enable Automatic Deploy for automatic deploys or Deploy Branch to manually deploy
+ 
+If you can't connect to github, you can deploy the code manually to Heroku. To do so:
+    In the terminal, login to Heroku using "heroku login -i"
+    Create your app using "heroku create your_app_name_here"
+    git add and git commit any changes
+    Push your work to Heroku using "git push heroku main"
+    A link to the app will be shown.
+ 
+Click "View" to view the deployed site
+The deployed site can also be accessed from the Environment section in the github repository
 
 -----
 
@@ -175,5 +250,3 @@ https://eczema.org/helpline/
 
 https://www.mind.org.uk/information-support/
 </details>
-
-### Further Learning
