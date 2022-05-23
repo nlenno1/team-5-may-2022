@@ -452,6 +452,33 @@ h5 {
     padding-top: 3rem;
 }
 
+/* styling for 404 page */
+#page-not-found {
+    background-image: url("/media/404-img.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--tertiary-color);
+}
+
+.page404-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 50rem;
+    margin: 2rem auto;
+}
+
+
 @media (max-width: 990px) {
     .right-push {
         text-align: right;
