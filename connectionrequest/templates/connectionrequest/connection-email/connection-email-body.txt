@@ -4,7 +4,7 @@ You have been sent this email by ReachOut a service designed to help people comm
 
 We are reaching out to you as there is someone in your {{ data.relation }} that is struggling with {{ data.connection_reason }} which is a topic that they find hard to talk about in person.
 
-The person in question would like to know if you are willing to talk to them about this issue.{% if data.custom_message "= "" %}They sent you this custom message: {{ data.custom_message }}{% endif %}
+The person in question would like to know if you are willing to talk to them about this issue. {% if data.custom_message != "" %}They sent you this custom message: {{ data.custom_message }}{% endif %}
 
 To repond to this email please follow this link to our website where you will be able to respond.
 While you are there you can learn more about ReachOut and what we do.
