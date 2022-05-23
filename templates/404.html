@@ -2,19 +2,26 @@
 {% load static %}
 
 {% block content %}
-
-<div class="row">
-    <div class="col">
-        <div class="card p-5 error-500">
-            <div class="card-body text-center">
-                <div class="card-title">
-                    <h1>404 - The requested page was not found</h1>
+    <section id="page-not-found" class="img-fluid">
+        <div class="page404-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="display-4 text-shadow-primary">Ooops!</h1>
+                    <h2>The page you are looking for is not found!</h2>
+                    <p class="display-4">Here are some helpful links instead:</p>
                 </div>
-                <div class="card-body">
-                    <img src="{% static 'img/404.webp' %}" alt="404 Error Graphic" class="w-50">
+            </div>
+            <div class="row">
+                <div class="icon-holder green-bg row align-items-center">
+                    <div class="icon-holder-icon white col">
+                        <a class="navlink" href="{% url 'home' %}"><i class="fa-solid fa-house"></i>Back to Home Page
+                    </div>
+                </div>
+                <div class="icon-holder-icon white col">
+                    <a class="navlink" href="{% url 'how_to_use' %}"><i class="fa-solid fa-circle-question"></i>How to Use Reach Out
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
 {% endblock %}
