@@ -1,7 +1,7 @@
 {% load static %}
 
 <!-- NAVBAR STYLING -->
-<nav class="navbar navbar-expand-md navbar-dark">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}"></a>
         <button id="menu-toggle-button" class="navbar-toggler text-white"
@@ -9,15 +9,15 @@
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+        <div class="collapse navbar-collapse navbar-text" id="navbarResponsive">
+            <ul class="navbar-nav navbar-list-holder ml-auto">
+                <li class="nav-item active nav-border green-bg">
                     <a class="navlink" href="{% url 'home' %}">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-border dark-blue-bg">
                     <a class="navlink" href="">Login</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-border green-bg">
                     <a class="navlink dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink"
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Reach Out
@@ -27,10 +27,10 @@
                         <li><a class="dropdown-item" href="{% url 'connection_request_search'%}">Search</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-border dark-blue-bg">
                     <a class="navlink" href="{% url 'how_to_use' %}">How To</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-border green-bg">
                     <a class="navlink" href="{% url 'about_us' %}">About Us</a>
                 </li>
             </ul>
