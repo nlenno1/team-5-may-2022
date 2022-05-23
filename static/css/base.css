@@ -20,7 +20,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin:0;
+    margin: 0;
 }
 
 footer p,
@@ -202,6 +202,14 @@ h5 {
     font-size: 7.5rem;
 }
 
+.help-container {
+    padding-bottom: 3rem;
+}
+
+.support-link-text-holder {
+    justify-content: center;
+}
+
 /* About Us */
 #about-hero {
     background-image: url("/media/about-hero.webp");
@@ -219,7 +227,7 @@ h5 {
 }
 
 #index-hero {
-    background-image: url("/media/hands-big.png");
+    background-image: url("/media/index-hero.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -233,7 +241,7 @@ h5 {
 }
 
 #how-to-hero {
-    background-image: url("/media/how-to-hero.jpeg");
+    background-image: url("/media/how-to-hero.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -253,6 +261,15 @@ h5 {
     width: auto;
     max-width: 50rem;
     margin: 0 auto;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 50rem;
+    margin: 1rem auto;
 }
 
 .text-shadow-primary {
@@ -312,7 +329,7 @@ h5 {
     position: fixed;
     top: 15%;
     right: 10%;
-    
+
     z-index: 9999999;
 }
 
@@ -412,6 +429,8 @@ h5 {
     padding-top: 3rem;
 }
 
-.right-push {
-    text-align: right;
+@media (max-width: 990px) {
+    .right-push {
+        text-align: right;
     }
+}
