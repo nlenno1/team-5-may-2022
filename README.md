@@ -1,6 +1,4 @@
-# Reach Out
-
-![Reach logo](./assets/images/readme/hands.png)
+![Reach logo](./assets/images/readme/logo.svg)
 
 A project that aims to help struggling people take the first steps in reaching out to talk to their friends and family for support.
 
@@ -149,8 +147,6 @@ This project makes use of the following languages, frameworks, and libraries:
 - [pylint](https://pylint.org/)
 </details>
 
-<details>
-
 -----
 
 ## Testing
@@ -170,17 +166,14 @@ We managed to achieve high scores on lighthouse. Performance could be improved b
 
 ![Lighthouse](./assets/images/readme/lighthouse.png)
 
-Placeholders
-
-
-
 -----
 
 ## Deployment
 Continuous Deployment practices via GitHub Pages were implemented for this project.
 
 A live version of this site has already been deployed [here](https://team5-reachout.herokuapp.com/)
-This site can be deployed using the Heroku app. To do so you will need to:
+
+This site can be re-deployed using the Heroku app. To do so you will need to:
  
 Create an account on Heroku
 Once signed in click on the "Create New App"
@@ -210,6 +203,8 @@ The deployed site can also be accessed from the Environment section in the githu
 -----
 
 ## Credits
+
+A big thankyou to Andrew of the HackTeam who helped with the final deployment of the site.
 
 ### Content
 
