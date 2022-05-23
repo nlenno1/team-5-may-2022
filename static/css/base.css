@@ -7,6 +7,7 @@
     --fw-m: 600;
     --fw-b: 800;
 
+    /* text shadow credit to https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ */
     --text-primary: #1083a3;
     --text-secondary: #363946;
     --text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
@@ -107,6 +108,10 @@ h5 {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-dark .navbar-text a:hover {
+    color: #000;
 }
 
 .navbar-brand {

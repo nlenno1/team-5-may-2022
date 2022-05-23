@@ -130,6 +130,7 @@ This project makes use of the following languages, frameworks, and libraries:
 - [Balsamiq](https://balsamiq.com/) - Wireframe designer software
 - [Coolors](https://coolors.co/) - Colour scheme generator
 - [Lucid App](https://lucid.app/) - Diagram creator
+- [CloudConvert](https://cloudconvert.com/png-to-webp) - Image converter used to convert png images to webp
 </details>
 
 <details>
@@ -183,20 +184,20 @@ Go to the "Settings" tab
 Add a config vars with the key: PORT and value: 8000
 Click "Add Buildpack"
 Add "nodejs" and then "python", the order is important here.
- 
+
 If Heroku is functioning with github correctly.
     Go to the "Deploy" tab
     Select the Github option and connect to github
     Search for the name of the github repository
     Click on Enable Automatic Deploy for automatic deploys or Deploy Branch to manually deploy
- 
+
 If you can't connect to github, you can deploy the code manually to Heroku. To do so:
     In the terminal, login to Heroku using "heroku login -i"
     Create your app using "heroku create your_app_name_here"
     git add and git commit any changes
     Push your work to Heroku using "git push heroku main"
     A link to the app will be shown.
- 
+
 Click "View" to view the deployed site
 The deployed site can also be accessed from the Environment section in the github repository
 
